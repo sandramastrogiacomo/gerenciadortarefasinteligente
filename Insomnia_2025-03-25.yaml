@@ -1,0 +1,192 @@
+type: collection.insomnia.rest/5.0
+name: Gerenciador de Tarefas
+meta:
+  id: wrk_a7f7fd7f81f041c08c4ebc813e4338d0
+  created: 1742866876593
+  modified: 1742910930538
+collection:
+  - name: Tarefa
+    meta:
+      id: fld_5bd4b06386004a98a7fe13d88528b0c9
+      created: 1742867124747
+      modified: 1742867124747
+      sortKey: -1742867124747
+    children:
+      - url: localhost:8080/tarefas
+        name: Consultar todas as tarefas
+        meta:
+          id: req_63340ddb425043d7b71ba0deb8cdd169
+          created: 1742867156566
+          modified: 1742867201438
+          isPrivate: false
+          sortKey: -1742867156566
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: localhost:8080/tarefas/1
+        name: Consultar tarefa por ID
+        meta:
+          id: req_b4f2af68a1bf46f3a479c4d3d65502fc
+          created: 1742868238726
+          modified: 1742923599602
+          isPrivate: false
+          sortKey: -1742868238726
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: localhost:8080/tarefas/titulo/relacionamento
+        name: Consultar tarefa por título
+        meta:
+          id: req_1a8ca6f2d1464e35b37c3e66915a29da
+          created: 1742868986914
+          modified: 1742924498931
+          isPrivate: false
+          sortKey: -1742868986914
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: localhost:8080/tarefas
+        name: Cadastrar tarefa
+        meta:
+          id: req_279848996586423497c3c4cb087454ba
+          created: 1742899703625
+          modified: 1742924554764
+          isPrivate: false
+          sortKey: -1742899703625
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"titulo" : "Artigo LinkedIn",
+            	"descricao" : "Escrever um artigo sobre Github.",
+            		"dataLimite": "2025-05-31T23:59:59",
+            		"status": "EM_ANDAMENTO",
+            		"dataAtualizacao": "2025-03-24T22:40:09"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: localhost:8080/tarefas
+        name: Atualizar tarefa
+        meta:
+          id: req_8426820ad4f54be08577f38dc8c3aef6
+          created: 1742900609928
+          modified: 1742933248763
+          isPrivate: false
+          sortKey: -1742900609928
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+               	"id": 2,
+            		"titulo": "Relatório AEAS",
+            		"descricao": "Elaborar relatório redes sociais AEAS",
+            		"dataLimite": "2025-05-31T23:59:59",
+            		"status": "CONCLUIDA",
+            		"dataAtualizacao": "2025-03-24T22:40:09"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: localhost:8080/tarefas/10
+        name: Deletar tarefa
+        meta:
+          id: req_8138c346d5844d268c53efb8272a3fee
+          created: 1742901173856
+          modified: 1742933331757
+          isPrivate: false
+          sortKey: -1742901173856
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: localhost:8080/tarefas/status/EM_ANDAMENTO
+        name: Consultar por status
+        meta:
+          id: req_bd9716af651c4e10b2ecdd26dd98790f
+          created: 1742901881462
+          modified: 1742933487469
+          isPrivate: false
+          sortKey: -1742901881462
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_9ac7526d958fac739e178b658ac1315e2792ba5f
+    created: 1742866876598
+    modified: 1742866876598
+environments:
+  name: Base Environment
+  meta:
+    id: env_9ac7526d958fac739e178b658ac1315e2792ba5f
+    created: 1742866876596
+    modified: 1742866876596
+    isPrivate: false
