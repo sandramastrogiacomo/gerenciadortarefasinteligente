@@ -11,7 +11,7 @@ Este projeto foi desenvolvido como **Projeto Integrador** do módulo **Técnicas
 
 ## 🎯 Objetivos de Aprendizado
 
-1. Aplicar conceitos avançados de **Java e programçao funcional**
+1. Aplicar conceitos avançados de **Java e programção funcional**
 2. Implementar **boas práticas de programação**
 3. Desenvolver habilidades de **arquitetura de software**
 4. Praticar **trabalho em equipe** (Git, documentação)
